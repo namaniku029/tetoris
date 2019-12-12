@@ -68,7 +68,7 @@ public class MinoControl : MonoBehaviour
 
         a = 0;
         //親オブジェクトの下にミノがあった場合そこで止まる
-        foreach (GameObject mino in this.minos) {
+        /*foreach (GameObject mino in this.minos) {
             if (transform.position.x == this.minoX[a] && transform.position.y == this.minoY[a] + 1.0f){
                 gameObject.transform.DetachChildren();    //親子関係の解除
                 Destroy(gameObject);     //minoセットオブジェクト（親）を削除
@@ -84,7 +84,7 @@ public class MinoControl : MonoBehaviour
             }
 
             a++;
-        }
+        }*/
         //地面についたとき親解除
         if (transform.position.y == 0.5f)
         {

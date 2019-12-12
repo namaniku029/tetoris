@@ -30,10 +30,10 @@ public class MinoControl2 : MonoBehaviour
     void Start()
     {
         //ステージの壁部分に１(壁)を代入
-        for (int i = 0;i<12;i++)
+        /*for (int i = 0;i<12;i++)
             for (int j =0;j<25;j++ )
                 if (i == 0 || i==11 ||j ==0)
-                    stage[i, j] = 1;
+                    stage[i, j] = 1;*/
         
 
     }
@@ -41,11 +41,7 @@ public class MinoControl2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        for (int i = 0;i<4000;i++) {
-            if (i /2 == 0 ) {
-                minos[0].MinoStartPos();
-            }
-        }
+        minos[0].MinoStartPos();
     }
 }
 
@@ -61,6 +57,6 @@ class Block : MinoControl2
     public void MinoStartPos()
     {
         Vector2 StartPos = new Vector2(6.5f, 22.5f);
-        transform.Translate(StartPos.x,StartPos.y,0,Space.World);
+       
     }
 }
